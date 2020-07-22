@@ -50,4 +50,12 @@ def vowel_links(txt):
 
 
 
-
+def vowel_links(txt):
+    words = txt.split()
+    vowel1 = ("a","e","i","o","u")
+    for i in range(len(words)):
+        if words[i].endswith(vowel1) and words[i+1].
+startswith(vowel1):
+            return True
+    else: False
+print(vowel_links("a very large appliance"))
